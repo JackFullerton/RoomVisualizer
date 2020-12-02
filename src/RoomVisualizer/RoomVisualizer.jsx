@@ -18,13 +18,13 @@ export default class RoomVisualizer extends Component {
   }
 
   handleMouseDown(row, col) {
-    const newGrid = getNewGridWithWallToggled(this.state.grid, row, col);
+    const newGrid = getNewGridWithPersonToggled(this.state.grid, row, col);
     this.setState({grid: newGrid, mouseIsPressed: true});
   }
 
   handleMouseEnter(row, col) {
     if (!this.state.mouseIsPressed) return;
-    const newGrid = getNewGridWithWallToggled(this.state.grid, row, col);
+    const newGrid = getNewGridWithPersonToggled(this.state.grid, row, col);
     this.setState({grid: newGrid});
   }
 
@@ -152,7 +152,7 @@ const createNode = (col, row) => {
     previousNode: null,
   };
 };
-const getNewGridWithWallToggled = (grid, row, col) => {
+const getNewGridWithPersonToggled = (grid, row, col) => {
   const newGrid = grid.slice();
   const node = newGrid[row][col];
   const newNode = {
