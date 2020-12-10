@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+.online{
+  color: green;
+  text-decoration-thickness: 2px;
+  background-color: black;
+  font-weight: bold;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
