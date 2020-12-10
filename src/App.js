@@ -7,7 +7,7 @@ function App() {
       <RoomVisualizer></RoomVisualizer>
       </div>
       <div id='heatmap'>
-        <p>This is the heatmap...kinda</p>
+        <h2>This is the heatmap...kinda</h2>
       </div>
     </div>
   );

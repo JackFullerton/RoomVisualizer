@@ -1,7 +1,51 @@
 .grid {
-    background-image: url('../floorplan.jpg');
-    width: 500px;
-    height: 282px;
-    position: fixed;
-    margin: 50px 0 0;
+    background-image: url('../csb-background-final.png');
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    margin: 50px 300px 0px;
+    font-size: 0;
+  }
+
+  .visualize-button{
+    background-color: white; 
+    border: 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .button-div{
+    border: 10px;
+    padding-top: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+    padding-bottom: 2px;
+  }
+  
+  li button {
+    display: block;
+    color: white;
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li button:hover {
+    background-color:grey;
   }
